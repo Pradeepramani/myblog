@@ -1,0 +1,28 @@
+/* Footer styles */
+.footer {
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Set footer height to 30px */
+    background-color: #34495e; /* Footer background color */
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+}
+
+.footer a {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.footer a:hover {
+    opacity: 0.8; /* Slight opacity on hover for a subtle effect */
+}
+
+.footer svg {
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.footer a:hover svg {
+    transform: scale(1.2); /* Slightly scale up the icon when hovered */
+}

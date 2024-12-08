@@ -1,0 +1,23 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body container */
+.body {
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(135deg, #34495E, #1ABC9C); /* Gradient background */
+    color: white;
+    min-height: 100vh;
+    padding-top: 120px; /* Space for fixed header */
+    opacity: 0; /* Start hidden for fade-in effect */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+.section
+{
+    border: 2px solid black;
+
+}

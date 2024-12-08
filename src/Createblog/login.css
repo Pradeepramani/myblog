@@ -1,0 +1,43 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.loginpage
+{
+    display: grid;
+    /* width: 100vw; */
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    color: #000;
+}
+
+.login
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+
+}
+
+.h3
+{
+    margin: 10px;
+}
+
+.button
+{
+    margin: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}

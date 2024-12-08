@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect element width */
+}
+
+/* .header
+{
+    background: linear-gradient(135deg, #34495E, #1ABC9C);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+   
+   
+    
+} */
+
+.header {
+    background: linear-gradient(135deg, #34495E, #1ABC9C);
+    height: 100px; /* Ensure height is properly defined */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure header takes up full width */
+    /* z-index: 100; Make sure it stays on top of the body */
+}
+
+.create-blog
+{
+    /* display: inline; */
+    position: absolute;
+    /* height: 80px; */
+    right: 20px;
+    top: 80px;
+    /* position: absolute; */
+
+}
+.icons
+{
+    width: 200px;
+    text-decoration: none;
+}
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    
+    text-decoration: none;
+    color: white;
+}
+

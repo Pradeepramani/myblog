@@ -1,0 +1,5 @@
+.app {
+  display: flex;
+  flex-direction: column; /* Stack the header and body vertically */
+  min-height: 100vh; /* Ensure the content stretches the whole screen */
+}

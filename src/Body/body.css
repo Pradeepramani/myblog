@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body container */
+.body {
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(135deg, #34495E, #1ABC9C); /* Gradient background */
+    color: white;
+    min-height: 100vh;
+    /* padding-top: 120px; Space for fixed header */
+    opacity: 0; /* Start hidden for fade-in effect */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Wrapper for content to center */
+.content {
+    max-width: 900px;
+    /* height: 500px; */
+    margin: 0 auto;
+    padding: 100px;
+    background: linear-gradient(135deg, #34495E, #181818); /* Semi-transparent dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    animation: slideInUp 0.8s ease-out forwards; /* Slide-in animation */
+}
+
+/* Slide-in Animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading styles */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    animation: fadeInUp 1s ease-out; /* Fade and slide-in animation */
+}
+
+/* Fade and Slide-in Heading Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Paragraph styles */
+.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInUp 10s ease-out 5s; /* Delayed fade and slide-in */
+}
+
+/* List of technologies */
+.tech-list {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    animation: fadeInUp 1s ease-out 1s; /* Delayed fade-in for list */
+}
+
+.tech-list li {
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34495e;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on tech list items */
+.tech-list li:hover {
+    background-color: #1abc9c;
+    transform: translateY(-5px); /* Lift the item slightly on hover */
+    cursor: pointer;
+}
+
+/* Scroll animation when elements come into view */
+@keyframes scrollIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add animation to all technology list items */
+.tech-list li:nth-child(1) {
+    animation: scrollIn 1s ease-out 0.2s;
+}
+
+.tech-list li:nth-child(2) {
+    animation: scrollIn 1s ease-out 0.4s;
+}
+
+.tech-list li:nth-child(3) {
+    animation: scrollIn 1s ease-out 0.6s;
+}
+
+.tech-list li:nth-child(4) {
+    animation: scrollIn 1s ease-out 0.8s;
+}
+
+.tech-list li:nth-child(5) {
+    animation: scrollIn 1s ease-out 1s;
+}
+
+.tech-list li:nth-child(6) {
+    animation: scrollIn 1s ease-out 1.2s;
+}
